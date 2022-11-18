@@ -1,0 +1,148 @@
+/* google font
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+*/
+
+a {
+    text-decoration-line: none;   
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.container{
+    background-color: transparent;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: 0px 0px 0px -190px;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+}
+
+/* 배너 컨테이너 */
+.rollingbanner{
+    position: relative;
+    width: 380px;
+    height: 40px;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    padding: 7px 15px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border-radius: 16px;
+}
+/* 롤링 배너 */
+.rollingbanner > .wrap{
+    position: relative;
+    width: auto;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}        
+.rollingbanner ul{
+    list-style: none;
+}
+.rollingbanner li{
+    position: absolute;
+    top: -36px;
+    left: 0;
+}
+/* 이전, 현재, 다음 롤링 배너 표시 */
+.rollingbanner li.prev{
+    top: 36px;
+    transition: top 0.5s ease;
+}
+.rollingbanner li.current{
+    top: 0;
+    transition: top 0.5s ease;
+}
+.rollingbanner li.next{
+    top: -36px;
+}
+.rollingbanner a{
+    display: block;
+    display: -webkit-box;
+    text-decoration: none;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:vertical;
+    overflow: hidden;
+    color: #000;
+    float: left;
+    margin: auto 16px auto 16px;
+}
+/* 반대 방향으로 진행 */
+/* .rollingbanner.reverse li.prev{
+    top: -36px;
+    transition: top 0.5s ease;
+}
+.rollingbanner.reverse li.next{
+    top: 36px;
+} */
+
+.keyword_body{
+    background-color: orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0px 0px -250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 500px;
+    height: 600px;
+    border-radius: 5px;
+}
+
+.keyword_top{
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0px 0px -150px;
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    transition: all 0.2s linear;
+    
+}
+.keyword_top_font{
+    font-size: 60px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.keyword_top:hover {
+    transform: scale(1.1);
+}
+
+/* .keyword_bottom{
+    background-color: transparent;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin: 0px 0px 0px -200px;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.keyword_bottom_font{
+    color: black;
+    background-color: green;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+} */
+
